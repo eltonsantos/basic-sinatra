@@ -1,17 +1,21 @@
-class BasicApp < Sinatra::Base
-  configure :development do
-    register Sinatra::Reloader
-  end
+require 'rack-livereload'
+require 'sinatra'
+use Rack::LiveReload
+
+def main
 
   get '/' do
     erb :index, locals: { now: Time.now }
   end
 
-  # Parameters data
   get '/article/:name' do
     "Hello, #{params[:name]}"
-    # Article.find_by_id(id).to_json
-    # article.body
+  end
+
+  get '/real_page' do
+    "Teste"
   end
 
 end
+
+main
