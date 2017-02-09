@@ -31,7 +31,7 @@ On terminal:
 ## Usage
 
 In your browser access `localhost:5000`.
-Install [terminal-notifier-guard](https://github.com/Codaisseur/terminal-notifier-guard) for show message automatically on system. The messagens will appear automatically when change any *.erb, *.css, *js, spec_* and others. This can be configured in Guardfile of application.
+Install [terminal-notifier-guard](https://github.com/Codaisseur/terminal-notifier-guard) for show message automatically on system. The messagens will appear automatically when change any .erb, .css, .js, spec_ and others. This can be configured in Guardfile of application.
 
 ## Test
 
